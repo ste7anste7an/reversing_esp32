@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = 'uiflow.bin'
+elf = 'factory.elf'
+gdbServerPort=3333

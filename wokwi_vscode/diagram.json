@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "ste7 an",
+  "editor": "wokwi",
+  "parts": [
+ { "type": "board-esp32-devkit-c-v4",
+   "id": "esp", 
+   "top": 96, 
+    "left": -158, 
+    "attrs": {"macAddress": "10:06:1C:0C:EE:44" }
+ },
+   { "type": "wokwi-ili9341", "id": "lcd1", "top": -104.8, "left": 105.3, "attrs": {"flipHorizontal":"1"	} }
+
+ ],
+  "connections": [
+   [ "esp:TX", "$serialMonitor:RX", "", [] ],
+   [ "esp:RX", "$serialMonitor:TX", "", [] ],
+[ "lcd1:GND", "esp:GND.2", "black", [ "v182.4", "h-220.8" ] ],
+    [ "lcd1:RST", "esp:4", "purple", [ "v57.6", "h-240" ] ],
+    [ "lcd1:D/C", "esp:2", "#8f4814", [ "v76.8", "h-249.6" ] ],
+    [ "lcd1:SCK", "esp:18", "gray", [ "v-0.01", "h-0.01", "v86.41", "h-249.6", "v-67.2" ] ],
+    [ "lcd1:MISO", "esp:19", "orange", [ "h-0.01", "v124.8", "h-249.6", "v-115.2" ] ],
+    [ "lcd1:MOSI", "esp:23", "green", [ "v144", "h-124.81", "v-192" ] ],
+    [
+      "esp:5V",
+      "lcd1:VCC",
+      "red",
+      [ "h-21.83", "v-206.3", "h201.6", "v196.7", "h127.58", "v-105.6" ]
+    ],
+    [ "lcd1:CS", "esp:15", "violet", [ "v115.2", "h-220.8", "v-28.8" ] ]
+
+ ],
+  "dependencies": {}
+}
+
