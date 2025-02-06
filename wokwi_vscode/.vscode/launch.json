@@ -8,7 +8,7 @@
         "program": "${workspaceFolder}/factory.elf",
         "cwd": "${workspaceFolder}",
         "MIMode": "gdb",
-        "miDebuggerPath": "c:/Users/kidsp/AppData/Local/Arduino15/packages/esp32/tools/xtensa-esp-elf-gdb/14.2_20240403/bin/xtensa-esp32-elf-gdb.exe",
+        "miDebuggerPath": "${workspaceFolder}/xtensa-esp32-elf-gdb.exe",
         "miDebuggerServerAddress": "localhost:3333"
       }
     ]
