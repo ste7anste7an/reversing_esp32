@@ -10,4 +10,4 @@ Use ghidra with xtensa architecture
 
 - install wokwi simulator in VS code
 - use directory in wokwi-vscode
-- wijzig pad naar xtensa gdb in .vscode/launch.json 
+- change path to point to `xtensa-esp32-elf-gdb.exe` in .vscode/launch.json 
